@@ -11,7 +11,7 @@
 		309C81F91ED3760C00E31D4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C81F81ED3760C00E31D4B /* User.swift */; };
 		309C81FB1ED3761600E31D4B /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C81FA1ED3761600E31D4B /* ToDo.swift */; };
 		309C81FD1ED3763300E31D4B /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C81FC1ED3763300E31D4B /* ToDoList.swift */; };
-		309C81FF1ED3763F00E31D4B /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C81FE1ED3763F00E31D4B /* Permissions.swift */; };
+		309C82011ED3803000E31D4B /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C82001ED3803000E31D4B /* Permissions.swift */; };
 		30D6E6601ED32DD30054E6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E65F1ED32DD30054E6E7 /* AppDelegate.swift */; };
 		30D6E6621ED32DD30054E6E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E6611ED32DD30054E6E7 /* ViewController.swift */; };
 		30D6E6651ED32DD30054E6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D6E6631ED32DD30054E6E7 /* Main.storyboard */; };
@@ -47,7 +47,7 @@
 		309C81F81ED3760C00E31D4B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		309C81FA1ED3761600E31D4B /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		309C81FC1ED3763300E31D4B /* ToDoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
-		309C81FE1ED3763F00E31D4B /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		309C82001ED3803000E31D4B /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 		30D6E65C1ED32DD30054E6E7 /* HoneyDew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoneyDew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D6E65F1ED32DD30054E6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30D6E6611ED32DD30054E6E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 				309C81F81ED3760C00E31D4B /* User.swift */,
 				309C81FA1ED3761600E31D4B /* ToDo.swift */,
 				309C81FC1ED3763300E31D4B /* ToDoList.swift */,
-				309C81FE1ED3763F00E31D4B /* Permissions.swift */,
+				309C82001ED3803000E31D4B /* Permissions.swift */,
 				30D6E6631ED32DD30054E6E7 /* Main.storyboard */,
 				30D6E6661ED32DD30054E6E7 /* Assets.xcassets */,
 				30D6E6681ED32DD30054E6E7 /* LaunchScreen.storyboard */,
@@ -466,7 +466,7 @@
 				30D6E6601ED32DD30054E6E7 /* AppDelegate.swift in Sources */,
 				309C81FD1ED3763300E31D4B /* ToDoList.swift in Sources */,
 				309C81F91ED3760C00E31D4B /* User.swift in Sources */,
-				309C81FF1ED3763F00E31D4B /* Permissions.swift in Sources */,
+				309C82011ED3803000E31D4B /* Permissions.swift in Sources */,
 				309C81FB1ED3761600E31D4B /* ToDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

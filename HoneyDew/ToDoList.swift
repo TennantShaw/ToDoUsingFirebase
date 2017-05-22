@@ -8,8 +8,17 @@
 
 import Foundation
 
-class ToDoList {
+class ToDoList: Equatable, Hashable {
     // MARK: - Properties
     var title: String = ""
     var todos: [ToDo] = []
+    
+    // MARK: - Equatable/Hashable Conformance
+    public static func == (lhs: ToDoList, rhs: ToDoList) -> Bool {
+        return lhs.title == rhs.title && lhs.todos == rhs.todos
+    }
+    
+    var hashValue: Int {
+        return title.hashValue
+    }
 }

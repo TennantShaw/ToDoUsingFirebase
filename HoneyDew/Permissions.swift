@@ -8,12 +8,7 @@
 
 import Foundation
 
-class Permissions {
-    // MARK: - Properties
-    var canEdit: Bool
+enum Permissions: Equatable {
+    case canEdit
     
-    // MARK: - Initializers
-    init(canEdit: Bool) {
-        self.canEdit = canEdit
-    }
 }

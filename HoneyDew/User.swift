@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User {
+class User: Equatable, Hashable {
     // MARK: - Properties
     var displayName: String
     var userName: String
@@ -20,5 +20,14 @@ class User {
         self.displayName = displayName
         self.userName = userName
         self.toDoList = toDoList
+    }
+    
+    // MARK: - Equatable/Hashable Conformance
+    public static func == (lhs: User, rhs: User) -> Bool {
+        return lhs.displayName == rhs.displayName && lhs.userName == rhs.userName && lhs.toDoList == rhs.toDoList
+    }
+    
+    var hashValue: Int {
+        return displayName.hashValue &+ userName.hashValue
     }
 }
