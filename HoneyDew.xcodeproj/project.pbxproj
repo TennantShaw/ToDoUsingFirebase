@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30D6E6601ED32DD30054E6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E65F1ED32DD30054E6E7 /* AppDelegate.swift */; };
+		30D6E6621ED32DD30054E6E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E6611ED32DD30054E6E7 /* ViewController.swift */; };
+		30D6E6651ED32DD30054E6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D6E6631ED32DD30054E6E7 /* Main.storyboard */; };
+		30D6E6671ED32DD30054E6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D6E6661ED32DD30054E6E7 /* Assets.xcassets */; };
+		30D6E66A1ED32DD30054E6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D6E6681ED32DD30054E6E7 /* LaunchScreen.storyboard */; };
+		30D6E6751ED32DD30054E6E7 /* HoneyDewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E6741ED32DD30054E6E7 /* HoneyDewTests.swift */; };
+		30D6E6801ED32DD30054E6E7 /* HoneyDewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E67F1ED32DD30054E6E7 /* HoneyDewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30D6E6711ED32DD30054E6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D6E6541ED32DD30054E6E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30D6E65B1ED32DD30054E6E7;
+			remoteInfo = HoneyDew;
+		};
+		30D6E67C1ED32DD30054E6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D6E6541ED32DD30054E6E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30D6E65B1ED32DD30054E6E7;
+			remoteInfo = HoneyDew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30D6E65C1ED32DD30054E6E7 /* HoneyDew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoneyDew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D6E65F1ED32DD30054E6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30D6E6611ED32DD30054E6E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30D6E6641ED32DD30054E6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30D6E6661ED32DD30054E6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30D6E6691ED32DD30054E6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30D6E66B1ED32DD30054E6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D6E6701ED32DD30054E6E7 /* HoneyDewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneyDewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D6E6741ED32DD30054E6E7 /* HoneyDewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyDewTests.swift; sourceTree = "<group>"; };
+		30D6E6761ED32DD30054E6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D6E67B1ED32DD30054E6E7 /* HoneyDewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneyDewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D6E67F1ED32DD30054E6E7 /* HoneyDewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyDewUITests.swift; sourceTree = "<group>"; };
+		30D6E6811ED32DD30054E6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30D6E6591ED32DD30054E6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D6E66D1ED32DD30054E6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D6E6781ED32DD30054E6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30D6E6531ED32DD20054E6E7 = {
+			isa = PBXGroup;
+			children = (
+				30D6E65E1ED32DD30054E6E7 /* HoneyDew */,
+				30D6E6731ED32DD30054E6E7 /* HoneyDewTests */,
+				30D6E67E1ED32DD30054E6E7 /* HoneyDewUITests */,
+				30D6E65D1ED32DD30054E6E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30D6E65D1ED32DD30054E6E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30D6E65C1ED32DD30054E6E7 /* HoneyDew.app */,
+				30D6E6701ED32DD30054E6E7 /* HoneyDewTests.xctest */,
+				30D6E67B1ED32DD30054E6E7 /* HoneyDewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30D6E65E1ED32DD30054E6E7 /* HoneyDew */ = {
+			isa = PBXGroup;
+			children = (
+				30D6E65F1ED32DD30054E6E7 /* AppDelegate.swift */,
+				30D6E6611ED32DD30054E6E7 /* ViewController.swift */,
+				30D6E6631ED32DD30054E6E7 /* Main.storyboard */,
+				30D6E6661ED32DD30054E6E7 /* Assets.xcassets */,
+				30D6E6681ED32DD30054E6E7 /* LaunchScreen.storyboard */,
+				30D6E66B1ED32DD30054E6E7 /* Info.plist */,
+			);
+			path = HoneyDew;
+			sourceTree = "<group>";
+		};
+		30D6E6731ED32DD30054E6E7 /* HoneyDewTests */ = {
+			isa = PBXGroup;
+			children = (
+				30D6E6741ED32DD30054E6E7 /* HoneyDewTests.swift */,
+				30D6E6761ED32DD30054E6E7 /* Info.plist */,
+			);
+			path = HoneyDewTests;
+			sourceTree = "<group>";
+		};
+		30D6E67E1ED32DD30054E6E7 /* HoneyDewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30D6E67F1ED32DD30054E6E7 /* HoneyDewUITests.swift */,
+				30D6E6811ED32DD30054E6E7 /* Info.plist */,
+			);
+			path = HoneyDewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30D6E65B1ED32DD30054E6E7 /* HoneyDew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D6E6841ED32DD30054E6E7 /* Build configuration list for PBXNativeTarget "HoneyDew" */;
+			buildPhases = (
+				30D6E6581ED32DD30054E6E7 /* Sources */,
+				30D6E6591ED32DD30054E6E7 /* Frameworks */,
+				30D6E65A1ED32DD30054E6E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoneyDew;
+			productName = HoneyDew;
+			productReference = 30D6E65C1ED32DD30054E6E7 /* HoneyDew.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30D6E66F1ED32DD30054E6E7 /* HoneyDewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D6E6871ED32DD30054E6E7 /* Build configuration list for PBXNativeTarget "HoneyDewTests" */;
+			buildPhases = (
+				30D6E66C1ED32DD30054E6E7 /* Sources */,
+				30D6E66D1ED32DD30054E6E7 /* Frameworks */,
+				30D6E66E1ED32DD30054E6E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30D6E6721ED32DD30054E6E7 /* PBXTargetDependency */,
+			);
+			name = HoneyDewTests;
+			productName = HoneyDewTests;
+			productReference = 30D6E6701ED32DD30054E6E7 /* HoneyDewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30D6E67A1ED32DD30054E6E7 /* HoneyDewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D6E68A1ED32DD30054E6E7 /* Build configuration list for PBXNativeTarget "HoneyDewUITests" */;
+			buildPhases = (
+				30D6E6771ED32DD30054E6E7 /* Sources */,
+				30D6E6781ED32DD30054E6E7 /* Frameworks */,
+				30D6E6791ED32DD30054E6E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30D6E67D1ED32DD30054E6E7 /* PBXTargetDependency */,
+			);
+			name = HoneyDewUITests;
+			productName = HoneyDewUITests;
+			productReference = 30D6E67B1ED32DD30054E6E7 /* HoneyDewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30D6E6541ED32DD30054E6E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Tennant Shaw";
+				TargetAttributes = {
+					30D6E65B1ED32DD30054E6E7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					30D6E66F1ED32DD30054E6E7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30D6E65B1ED32DD30054E6E7;
+					};
+					30D6E67A1ED32DD30054E6E7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30D6E65B1ED32DD30054E6E7;
+					};
+				};
+			};
+			buildConfigurationList = 30D6E6571ED32DD30054E6E7 /* Build configuration list for PBXProject "HoneyDew" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30D6E6531ED32DD20054E6E7;
+			productRefGroup = 30D6E65D1ED32DD30054E6E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30D6E65B1ED32DD30054E6E7 /* HoneyDew */,
+				30D6E66F1ED32DD30054E6E7 /* HoneyDewTests */,
+				30D6E67A1ED32DD30054E6E7 /* HoneyDewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30D6E65A1ED32DD30054E6E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D6E66A1ED32DD30054E6E7 /* LaunchScreen.storyboard in Resources */,
+				30D6E6671ED32DD30054E6E7 /* Assets.xcassets in Resources */,
+				30D6E6651ED32DD30054E6E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D6E66E1ED32DD30054E6E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D6E6791ED32DD30054E6E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30D6E6581ED32DD30054E6E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D6E6621ED32DD30054E6E7 /* ViewController.swift in Sources */,
+				30D6E6601ED32DD30054E6E7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D6E66C1ED32DD30054E6E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D6E6751ED32DD30054E6E7 /* HoneyDewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D6E6771ED32DD30054E6E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D6E6801ED32DD30054E6E7 /* HoneyDewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30D6E6721ED32DD30054E6E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30D6E65B1ED32DD30054E6E7 /* HoneyDew */;
+			targetProxy = 30D6E6711ED32DD30054E6E7 /* PBXContainerItemProxy */;
+		};
+		30D6E67D1ED32DD30054E6E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30D6E65B1ED32DD30054E6E7 /* HoneyDew */;
+			targetProxy = 30D6E67C1ED32DD30054E6E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30D6E6631ED32DD30054E6E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30D6E6641ED32DD30054E6E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30D6E6681ED32DD30054E6E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30D6E6691ED32DD30054E6E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30D6E6821ED32DD30054E6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30D6E6831ED32DD30054E6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30D6E6851ED32DD30054E6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HoneyDew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.HoneyDew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		30D6E6861ED32DD30054E6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HoneyDew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.HoneyDew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		30D6E6881ED32DD30054E6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HoneyDewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.HoneyDewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoneyDew.app/HoneyDew";
+			};
+			name = Debug;
+		};
+		30D6E6891ED32DD30054E6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HoneyDewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.HoneyDewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoneyDew.app/HoneyDew";
+			};
+			name = Release;
+		};
+		30D6E68B1ED32DD30054E6E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HoneyDewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.HoneyDewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HoneyDew;
+			};
+			name = Debug;
+		};
+		30D6E68C1ED32DD30054E6E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HoneyDewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.HoneyDewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HoneyDew;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30D6E6571ED32DD30054E6E7 /* Build configuration list for PBXProject "HoneyDew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D6E6821ED32DD30054E6E7 /* Debug */,
+				30D6E6831ED32DD30054E6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30D6E6841ED32DD30054E6E7 /* Build configuration list for PBXNativeTarget "HoneyDew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D6E6851ED32DD30054E6E7 /* Debug */,
+				30D6E6861ED32DD30054E6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30D6E6871ED32DD30054E6E7 /* Build configuration list for PBXNativeTarget "HoneyDewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D6E6881ED32DD30054E6E7 /* Debug */,
+				30D6E6891ED32DD30054E6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30D6E68A1ED32DD30054E6E7 /* Build configuration list for PBXNativeTarget "HoneyDewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D6E68B1ED32DD30054E6E7 /* Debug */,
+				30D6E68C1ED32DD30054E6E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30D6E6541ED32DD30054E6E7 /* Project object */;
+}
