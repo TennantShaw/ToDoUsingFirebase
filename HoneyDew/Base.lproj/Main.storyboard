@@ -48,7 +48,7 @@
         <!--ToDoViewController-->
         <scene sceneID="1k4-0S-yZg">
             <objects>
-                <viewController title="ToDoViewController" id="HIp-5l-EUH" customClass="ToDoViewController" customModule="HoneyDew" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ToDoVC" title="ToDoViewController" id="HIp-5l-EUH" customClass="ToDoViewController" customModule="HoneyDew" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m0y-j0-bhx"/>
                         <viewControllerLayoutGuide type="bottom" id="ss1-T0-EBL"/>
@@ -66,8 +66,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="77Z-jJ-Ymy">
                                 <rect key="frame" x="16" y="94" width="343" height="251"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What you want done" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aKK-gJ-JpN">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aKK-gJ-JpN">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" hint="What you want done" identifier="title"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="0ti-1I-ua1"/>
                                             <constraint firstAttribute="height" constant="30" id="U1H-XA-zfR"/>
@@ -76,9 +77,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How about adding a task that helps you in taking a step towards getting what you want done, done." translatesAutoresizingMaskIntoConstraints="NO" id="Hgv-ai-cMK">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hgv-ai-cMK">
                                         <rect key="frame" x="0.0" y="41" width="340" height="210"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" hint="How about adding a task that helps you in taking a step towards getting what you want done, done." identifier="description"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="340" id="BAd-z6-hRo"/>
                                             <constraint firstAttribute="height" constant="210" id="az6-vy-9hG"/>
@@ -112,11 +114,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Your ToDo" id="1W3-Qw-Aga">
-                        <barButtonItem key="leftBarButtonItem" title="Done" id="Vda-Sd-gh5">
-                            <connections>
-                                <action selector="doneButton:" destination="HIp-5l-EUH" id="x0s-Eu-cTZ"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="vIG-R1-vFe">
                             <connections>
                                 <action selector="saveButton:" destination="HIp-5l-EUH" id="483-NJ-7Ob"/>
@@ -124,6 +121,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="datePicker" destination="9wM-zE-thj" id="D1U-8i-Spa"/>
                         <outlet property="titleTextField" destination="aKK-gJ-JpN" id="y0F-47-eSW"/>
                         <outlet property="todoTextView" destination="Hgv-ai-cMK" id="UaI-j3-Cex"/>
                     </connections>

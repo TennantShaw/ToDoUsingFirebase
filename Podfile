@@ -7,6 +7,7 @@ target 'HoneyDew' do
 
   # Pods for HoneyDew
   pod 'Firebase'
+  pod 'Firebase/Database'
 
   target 'HoneyDewTests' do
     inherit! :search_paths
