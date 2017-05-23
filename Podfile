@@ -6,8 +6,12 @@ target 'HoneyDew' do
   use_frameworks!
 
   # Pods for HoneyDew
-  pod 'Firebase'
-  pod 'Firebase/Database'
+ pod 'Firebase/Auth'
+pod 'Firebase/Crash'
+pod 'Firebase/Database'
+pod 'Firebase/Invites'
+pod 'Firebase/RemoteConfig'
+pod 'Firebase/Storage'
 
   target 'HoneyDewTests' do
     inherit! :search_paths

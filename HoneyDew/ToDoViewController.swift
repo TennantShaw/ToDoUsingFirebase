@@ -8,10 +8,13 @@
 
 import Firebase
 import UIKit
+import GoogleSignIn
 
 class ToDoViewController: UIViewController {
+    
     // MARK: - Properties
     var todo: ToDo?
+    var todoList = [ToDo]()
     
     // MARK: - Outlets
     @IBOutlet var titleTextField: UITextField!
@@ -29,7 +32,7 @@ class ToDoViewController: UIViewController {
         dateFormatter.dateFormat = "MM/dd/yyyy hh:mm a"
         
         todo?.title = self.titleTextField.text
-        todo?.description = self.todoTextView.text
+        todo?.text = self.todoTextView.text
         todo?.reminderDate = dateFormatter.string(from: Date())
         
         let ref = Database.database().reference()
@@ -37,7 +40,7 @@ class ToDoViewController: UIViewController {
         
         let dictionaryTodo = [
             "title" : todo!.title!,
-            "description" : todo!.description!,
+            "text" : todo!.text!,
             "date" : todo!.reminderDate!
             ]
         
@@ -48,6 +51,27 @@ class ToDoViewController: UIViewController {
         })
         
     }
+    
+    // MARK: - Load Data
+    func loadData() {
+        self.todoList.removeAll()
+        let ref = Database.database().reference()
+        ref.child("todoList").observeSingleEvent(of: .value, with: { (snapshot) in
+            if let todoDict = snapshot.value as? [String:AnyObject] {
+                for (_, todoElement) in todoDict {
+                    print(todoElement)
+                    let todo = ToDo()
+                    todo.title = todoElement["title"] as? String
+                    todo.text = todoElement["text"] as? String
+                    todo.reminderDate = todoElement["date"] as? String
+                    self.todoList.append(todo)
+                }
+            }
+            print("\(self.todoList)")
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
 
     
     // MARK: - View Life Cycle
@@ -55,13 +79,18 @@ class ToDoViewController: UIViewController {
         super.viewDidLoad()
         if self.todo != nil {
             titleTextField.text = self.todo?.title
-            todoTextView.text = self.todo?.description
+            todoTextView.text = self.todo?.text
             
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "MM/dd/yyyy hh:mm a"
             let date = dateFormatter.string(from: Date())
             datePicker.accessibilityIdentifier = date
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadData()
     }
 
 }

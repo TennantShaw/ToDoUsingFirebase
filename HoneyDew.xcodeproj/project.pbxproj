@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0673AEB6F0D6C9E5D809A1DB /* Pods_HoneyDewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A2FDF98EC9F0A765D4E2EC /* Pods_HoneyDewUITests.framework */; };
-		309C81F91ED3760C00E31D4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C81F81ED3760C00E31D4B /* User.swift */; };
 		309C81FB1ED3761600E31D4B /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C81FA1ED3761600E31D4B /* ToDo.swift */; };
 		309C81FD1ED3763300E31D4B /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C81FC1ED3763300E31D4B /* ToDoList.swift */; };
 		309C82051ED3BDB000E31D4B /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C82041ED3BDB000E31D4B /* ToDoListTableViewController.swift */; };
 		309C82071ED3BDC500E31D4B /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C82061ED3BDC500E31D4B /* ToDoViewController.swift */; };
+		309C82091ED490A200E31D4B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C82081ED490A200E31D4B /* SignInViewController.swift */; };
+		309C820B1ED492DF00E31D4B /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C820A1ED492DF00E31D4B /* MeasurementHelper.swift */; };
+		309C820D1ED493BA00E31D4B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C820C1ED493BA00E31D4B /* Constants.swift */; };
 		30D6E6601ED32DD30054E6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E65F1ED32DD30054E6E7 /* AppDelegate.swift */; };
 		30D6E6651ED32DD30054E6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D6E6631ED32DD30054E6E7 /* Main.storyboard */; };
 		30D6E6671ED32DD30054E6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D6E6661ED32DD30054E6E7 /* Assets.xcassets */; };
@@ -44,11 +46,13 @@
 /* Begin PBXFileReference section */
 		05CDDDB44E2B7F912FCC7D2E /* Pods_HoneyDew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoneyDew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30834D2F0C60C9078A7EFF66 /* Pods-HoneyDewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoneyDewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoneyDewTests/Pods-HoneyDewTests.debug.xcconfig"; sourceTree = "<group>"; };
-		309C81F81ED3760C00E31D4B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		309C81FA1ED3761600E31D4B /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		309C81FC1ED3763300E31D4B /* ToDoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		309C82041ED3BDB000E31D4B /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
 		309C82061ED3BDC500E31D4B /* ToDoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		309C82081ED490A200E31D4B /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		309C820A1ED492DF00E31D4B /* MeasurementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
+		309C820C1ED493BA00E31D4B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		30D6E65C1ED32DD30054E6E7 /* HoneyDew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoneyDew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D6E65F1ED32DD30054E6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30D6E6641ED32DD30054E6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,11 +139,13 @@
 			isa = PBXGroup;
 			children = (
 				30D6E65F1ED32DD30054E6E7 /* AppDelegate.swift */,
-				309C81F81ED3760C00E31D4B /* User.swift */,
+				309C82081ED490A200E31D4B /* SignInViewController.swift */,
 				309C82041ED3BDB000E31D4B /* ToDoListTableViewController.swift */,
 				309C82061ED3BDC500E31D4B /* ToDoViewController.swift */,
 				309C81FA1ED3761600E31D4B /* ToDo.swift */,
 				309C81FC1ED3763300E31D4B /* ToDoList.swift */,
+				309C820C1ED493BA00E31D4B /* Constants.swift */,
+				309C820A1ED492DF00E31D4B /* MeasurementHelper.swift */,
 				30D6E6631ED32DD30054E6E7 /* Main.storyboard */,
 				30D6E6661ED32DD30054E6E7 /* Assets.xcassets */,
 				30D6E6681ED32DD30054E6E7 /* LaunchScreen.storyboard */,
@@ -462,12 +468,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309C820B1ED492DF00E31D4B /* MeasurementHelper.swift in Sources */,
+				309C82091ED490A200E31D4B /* SignInViewController.swift in Sources */,
 				30D6E6601ED32DD30054E6E7 /* AppDelegate.swift in Sources */,
 				309C82051ED3BDB000E31D4B /* ToDoListTableViewController.swift in Sources */,
 				309C81FD1ED3763300E31D4B /* ToDoList.swift in Sources */,
-				309C81F91ED3760C00E31D4B /* User.swift in Sources */,
 				309C82071ED3BDC500E31D4B /* ToDoViewController.swift in Sources */,
 				309C81FB1ED3761600E31D4B /* ToDo.swift in Sources */,
+				309C820D1ED493BA00E31D4B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

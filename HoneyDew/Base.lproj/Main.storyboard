@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="F9M-xd-oCD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eyc-eb-PbY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,59 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--SignInViewController-->
+        <scene sceneID="LNT-FV-17M">
+            <objects>
+                <viewController storyboardIdentifier="SignInVC" title="SignInViewController" id="eyc-eb-PbY" customClass="SignInViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U0r-CI-8a3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Roz-rC-tkp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U39-5f-O81">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqo-GI-pYc" customClass="GIDSignInButton">
+                                <rect key="frame" x="67.5" y="273.5" width="240" height="120"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="64o-F7-aam"/>
+                                    <constraint firstAttribute="width" constant="240" id="iLc-FQ-O9q"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HoneyDew" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxp-5W-WBs">
+                                <rect key="frame" x="17.5" y="64" width="340" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="BYd-9S-CAg"/>
+                                    <constraint firstAttribute="height" constant="80" id="SSv-aM-0vd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lqo-GI-pYc" firstAttribute="centerX" secondItem="U39-5f-O81" secondAttribute="centerX" id="ALq-P9-IU8"/>
+                            <constraint firstItem="Pxp-5W-WBs" firstAttribute="top" secondItem="U0r-CI-8a3" secondAttribute="bottom" constant="44" id="CcX-9Y-03g"/>
+                            <constraint firstItem="lqo-GI-pYc" firstAttribute="centerY" secondItem="U39-5f-O81" secondAttribute="centerY" id="HVe-tn-Uvc"/>
+                            <constraint firstItem="Pxp-5W-WBs" firstAttribute="centerX" secondItem="U39-5f-O81" secondAttribute="centerX" id="bLQ-Bv-AKK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SignInViewController" id="fTc-py-z4C"/>
+                    <connections>
+                        <outlet property="signInButton" destination="lqo-GI-pYc" id="hfI-0b-6iU"/>
+                        <segue destination="er2-qS-LeF" kind="show" identifier="signInSegue" id="cIY-l3-obp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnd-aR-I6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120.8" y="-154.27286356821591"/>
+        </scene>
         <!--ToDoListViewController-->
         <scene sceneID="9jN-R9-W93">
             <objects>
-                <tableViewController storyboardIdentifier="ToDoList" title="ToDoListViewController" id="v1B-1h-Qvt" customClass="ToDoListTableViewController" customModule="HoneyDew" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ToDoListTVC" title="ToDoListViewController" id="v1B-1h-Qvt" customClass="ToDoListTableViewController" customModule="HoneyDew" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3AL-rv-wt3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xzQ-ta-Q8T" id="sJc-5m-oiF">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -36,14 +85,14 @@
                     <navigationItem key="navigationItem" id="SNV-Wf-HfX">
                         <barButtonItem key="rightBarButtonItem" title="+" id="oFC-Hj-xHS">
                             <connections>
-                                <segue destination="HIp-5l-EUH" kind="show" identifier="todoSegue" id="Gkk-HZ-ma8"/>
+                                <segue destination="HIp-5l-EUH" kind="show" identifier="honeyDewSegue" id="Gkk-HZ-ma8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ARc-EY-jCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="-154.27286356821591"/>
+            <point key="canvasLocation" x="2930.4000000000001" y="-154.27286356821591"/>
         </scene>
         <!--ToDoViewController-->
         <scene sceneID="1k4-0S-yZg">
@@ -128,25 +177,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="900-ry-E9j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839.2" y="-154.27286356821591"/>
+            <point key="canvasLocation" x="3717.5999999999999" y="-154.27286356821591"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="1e8-w2-aaN">
+        <scene sceneID="b2j-YU-BD7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F9M-xd-oCD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="er2-qS-LeF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wza-zk-KOZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Eq4-pC-vcN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="v1B-1h-Qvt" kind="relationship" relationship="rootViewController" id="udY-R0-1iJ"/>
+                        <segue destination="v1B-1h-Qvt" kind="relationship" relationship="rootViewController" id="Nat-Sc-3el"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uc3-hl-69R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Vw-9I-TmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112.8" y="-154.27286356821591"/>
+            <point key="canvasLocation" x="1991.2" y="-154.27286356821591"/>
         </scene>
     </scenes>
 </document>

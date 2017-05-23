@@ -11,17 +11,17 @@ import Foundation
 class ToDo: Equatable, Hashable {
     // MARK: - Properties
     var title: String?
-    var description: String?
+    var text: String?
     var reminderDate: String?
     var uniqueID: String?
 
     // MARK: - Equatable/Hashable Conformance
     public static func == (lhs: ToDo, rhs: ToDo) -> Bool {
-        return lhs.title == rhs.title && lhs.description == rhs.description && lhs.reminderDate == rhs.reminderDate && lhs.uniqueID == rhs.uniqueID
+        return lhs.title == rhs.title && lhs.text == rhs.text && lhs.reminderDate == rhs.reminderDate && lhs.uniqueID == rhs.uniqueID
     }
     
     var hashValue: Int {
-        return title!.hashValue &+ description!.hashValue &+ reminderDate!.hashValue &+ uniqueID!.hashValue
+        return title!.hashValue &+ text!.hashValue &+ reminderDate!.hashValue &+ uniqueID!.hashValue
     }
     
 }
