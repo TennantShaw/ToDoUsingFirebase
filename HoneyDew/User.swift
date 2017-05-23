@@ -9,6 +9,10 @@
 import Foundation
 
 class User: Equatable, Hashable {
+    enum Permissions {
+        case canEdit
+    }
+    
     // MARK: - Properties
     var displayName: String
     var userName: String
